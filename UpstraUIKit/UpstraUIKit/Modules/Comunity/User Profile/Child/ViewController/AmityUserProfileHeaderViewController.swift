@@ -253,6 +253,8 @@ class AmityUserProfileHeaderViewController: AmityViewController, AmityRefreshabl
             followButton.backgroundColor = AmityColorSet.primary
             followButton.layer.borderWidth = 0
             followButton.tintColor = AmityColorSet.baseInverse
+       case .blocked:
+            followButton.isHidden = true
         @unknown default:
             fatalError()
         }
